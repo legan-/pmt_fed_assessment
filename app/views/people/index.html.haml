@@ -1,0 +1,14 @@
+%h1= t('controllers.people.index')
+
+%table
+  %thead
+    %tr
+      %th= t('views.table.last_name')
+      %th= t('views.table.first_name')
+      %th= t('views.table.birthday')
+    %tbody
+      - @people.limit(10).each do |person|
+        %tr
+          %td= person[:last_name]
+          %td= person[:first_name]
+          %td= person[:birthday]

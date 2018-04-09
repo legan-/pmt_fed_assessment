@@ -1,0 +1,6 @@
+.sidebar
+  - menu_items.each do |item|
+    = link_to item[:title], item[:href]
+
+  = link_to t('views.buttons.settings'), '#'
+  = link_to t('views.buttons.logout'), '#'

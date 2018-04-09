@@ -1,0 +1,14 @@
+%h1= t('controllers.programs.index')
+
+%table
+  %thead
+    %tr
+      %th= t('views.table.name')
+      %th= t('views.table.duration')
+      %th= t('views.table.created_at')
+    %tbody
+      - programs_list.each do |program|
+        %tr
+          %td= program_name(program[:name], program[:id])
+          %td= program[:duration]
+          %td= program[:created_at]

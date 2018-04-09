@@ -1,0 +1,27 @@
+ru:
+  application:
+    title:        '%{name} - PMT Online'
+    title_short:  PMT
+    header:       "Автоматизированная система<br />дистанционного медицинского обслуживания"
+    footer:       ©%{year} - ООО "Дистанционна медицина"
+  controllers:
+    menu:
+      index:      Главная
+    people:
+      index:      Пользователи
+    programs:
+      index:      Программы
+    reports:
+      idndex:     Отчеты
+  views:
+    buttons:
+      settings:   Настройки
+      logout:     Выйти
+    table:
+      first_name: Имя
+      last_name:  Фамилия
+      birthday:   День Рождения
+      name:       Наименование
+      duration:   Продолжительность
+      created_at: Дата создания
+
